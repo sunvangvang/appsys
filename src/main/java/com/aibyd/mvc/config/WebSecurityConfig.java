@@ -41,7 +41,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
 				.antMatchers("/css/**", "/font-awesome/**", "/fonts/**", "/images/**", "/img/**", "/js/**",
-						"/editor/**", "/login")
+						"/editor/**", "/login", "/**")
 				.permitAll().anyRequest().authenticated().and().formLogin().loginPage("/login")
 				.defaultSuccessUrl("/index")
 				// .successHandler(loginSuccessHandler())
