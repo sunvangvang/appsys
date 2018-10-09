@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/login.css">
 	</head>
 	<body>
-		<form class="layui-form" action="" method="POST">
+		<form class="layui-form" action="/login" method="POST">
 			<div class="layui-form-item">
 				<label class="layui-form-label">用户名</label>
 				<div class="layui-input-inline">
@@ -20,8 +20,12 @@
 			<div class="layui-form-item">
 				<label class="layui-form-label">密码</label>
 				<div class="layui-input-inline">
-					<input type="text" name="password" lay-verify="password|required" autocomplete="off" placeholder="请输入用户名" class="layui-input">
+					<input type="password" name="password" lay-verify="password|required" autocomplete="off" placeholder="请输入用户名" class="layui-input">
 				</div>
+			</div>
+			<div class="layui-form-item">
+				<button class="layui-btn layui-btn-normal" type="submit">登录</button>
+				<input type="submit" value="提交" />
 			</div>
 
 		</form>
